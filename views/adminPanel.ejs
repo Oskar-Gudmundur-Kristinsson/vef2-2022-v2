@@ -1,0 +1,20 @@
+<%- include('header') -%>
+
+<h1>events</h1>
+
+<%= events.forEach((item,index) = > { %>
+    <h3><a href="/"+item[1]><% item[0] %></a></h3>
+<% }) %>
+
+<h3>add new event</h3>
+<form action="/" method="post">
+    <label for="Name">Name of event</label><br>
+    <input type="text" id="Name" name="Name"><br>
+    <label for="description">Event description:</label><br>
+    <textarea rows = "5" cols = "50" name = "description">
+        Enter description here...
+    </textarea>
+    <button type="submit">add new event</button>
+</form> 
+
+<%- include('footer') -%>

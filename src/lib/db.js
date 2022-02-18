@@ -1,5 +1,8 @@
 import { readFile } from 'fs/promises';
 import pg from 'pg';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const SCHEMA_FILE = './sql/schema.sql';
 const DROP_SCHEMA_FILE = './sql/drop.sql';
@@ -62,3 +65,4 @@ export async function end() {
 }
 
 /* TODO útfæra aðgeðir á móti gagnagrunni */
+createSchema();

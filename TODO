@@ -1,0 +1,13 @@
+SET UP POSTGRESQL
+    
+
+
+CREATE TABLE statements 
+setup.js that calls shit from db.js to setup the fucking dbs or do it within db.js
+login page
+make forms
+form submission page
+admin pages
+input sanitation/form validation
+
+listevents in index-routes.js function should list events from events table

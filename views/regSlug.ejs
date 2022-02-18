@@ -1,0 +1,25 @@
+<%- include('header') -%>
+
+<h1><%= enventName %></h1>
+
+<h3><%= enventDes %></h3>
+
+<h2>Atendies so far</h2>
+
+<%= people.forEach((item,index) = > { %>
+    <h3><% item %></h3>
+<% }) %>
+
+<h1>Regester</h1>
+
+<form action="/" method="post">
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name"><br>
+    <label for="Comment">Comment</label><br>
+    <textarea rows = "5" cols = "50" name = "Comment">
+        Enter Comment here...
+    </textarea>
+    <button type="submit">Regester</button>
+</form> 
+
+<%- include('footer') -%>
