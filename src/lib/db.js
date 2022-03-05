@@ -26,7 +26,7 @@ pool.on('error', (err) => {
   process.exit(-1);
 });
 
-export async function query(q, values = []) {
+export default async function query(q, values = []) {
   let client;
   try {
     client = await pool.connect();
@@ -65,4 +65,8 @@ export async function end() {
 }
 
 /* TODO útfæra aðgeðir á móti gagnagrunni */
-createSchema();
+const urm = await readFile('./sql/drop.sql');
+await query(urm.toString('utf-8'));
+await createSchema();
+const data = await readFile('./sql/insert.sql');
+await query(data.toString('utf-8'));

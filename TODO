@@ -1,13 +1,20 @@
 SET UP POSTGRESQL
     
+so this is pretty straight forward that bcrypt tutorial should help alot
+do the users first 
+then eventsthen registrations
 
+you got this stress a healthy amount
 
 CREATE TABLE statements 
-setup.js that calls shit from db.js to setup the fucking dbs or do it within db.js
 login page
+users page
 make forms
 form submission page
 admin pages
 input sanitation/form validation
 
 listevents in index-routes.js function should list events from events table
+
+note to self:
+    setup.js is not usefull db.js has all setup would need

@@ -18,5 +18,6 @@ CREATE TABLE IF NOT EXISTS registration(
 CREATE TABLE IF NOT EXISTS users (
     id serial primary key,
     username character varying(64) NOT NULL,
-    password character varying(256) NOT NULL
+    password character varying(256) NOT NULL,
+    isAdmin boolean NOT NULL
 );
